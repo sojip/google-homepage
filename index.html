@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1755d5abdd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title> google-homepage</title>
+
 </head>
 
 <body>
-    <header>
+    <div class="content">
+ <header>
         <nav>
             <a href="#">Gmail</a>
             <a href="#">Images</a>
+            <a href="#"><i class="fas fa-bars"></i></a>
+            <a href="https://github.com/sojip" target="blank_"><img src="img/profile.png" alt=""></a>
         </nav>
     </header>
 
@@ -23,35 +28,44 @@
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="logo">
 
             <form action="#">
+                <i class="fas fa-search" id="seach_icon"></i>
                 <input type="text">
+                <i class="fas fa-microphone" id="microphone_icon"></i>
                 <br>
                 <button type="submit">Recherche Google</button>
                 <button type="submit">J'ai de la chance</button>
             </form>
 
-            <p>Google disponible en: <a href="#">English</a></p>
+            <p>Google disponible en : <a href="#">English</a></p>
         </div>
 
-        <footer>
-            <div class="location">
-                <p>Cameroun</p>
-            </div>
-            <div class="external_links">
-                <ul>
-
-                    <li><a href="#">Publicité</a></li>
-                    <li><a href="#">Entreprise</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#"></a>Comment fonctionne la recherche Google</li>
-
-                    <li><a href="#" class="right_links">Confidentialité</a></li>
-                    <li><a href="#" class="right_links">Conditions</a></li>
-                    <li><a href="#" class="right_links">Paramètres</a></li>
-                </ul>
-            </div>
-        </footer>
-
     </main>
+    </div>
+   
+    <footer>
+        <hr>
+        <div class="location">
+            <p>Cameroun</p>
+        </div>
+        <hr>
+        <div class="external_links">
+            <ul class="left_links">
+
+                <li><a href="#">Publicité</a></li>
+                <li><a href="#">Entreprise</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Comment fonctionne la recherche Google?</a></li>
+            </ul>
+
+            <ul class="right_links">
+                <li><a href="#" >Confidentialité</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Paramètres</a></li>
+            </ul>
+                
+            
+        </div>
+    </footer>
 </body>
 
 </html>

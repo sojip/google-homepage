@@ -1,37 +1,83 @@
+html {
+    height: 100%;  
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Navigation */
 nav {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+
 }
 
 nav a {
     text-decoration: none;
     color:black;
-    margin: 10px;
+    margin-left: 15px;
 }
 
-/* main */
-/* body {
-    position: relative;
-} */
+nav img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 25px;
+
+}
+
+/* content */
+
+.content {
+    flex: 1 0 auto;
+  } 
+
 .container {
-    width: 100%;
     text-align: center;
     margin-top: 100px;
+    position: relative;
 }
 
 form input {
     margin: 25px;
     width: 50%;
-    border-radius: 10px;
-    height: 25px;
+    border-radius: 20px;
+    height: 30px;
+}
+
+#seach_icon {
+    position: absolute;
+    top : 51%;
+    left: 26%;
+    
+}
+
+#microphone_icon {
+    position: absolute;
+    top : 51%;
+    right: 26%;
+}
+
+button {
+    padding: 10px;
 }
 
 /*footer */
 
 footer {
-    position: absolute;
-    bottom: 0;
+    flex-shrink: 0;
+    width: 100%;
   }
+
+.location p {
+    margin-left: 15px;
+}
 
 footer a {
     text-decoration: none;
@@ -45,10 +91,32 @@ ul {
 
 li {
     display: inline;
-    
+    margin: 15px; 
 }
 
-.right_links {
-    text-align: right;
-    color: red;
+.external_links {
+    display: flex;
+    justify-content: space-between;
 }
+
+@media (max-width : 992px) {
+    .external_links {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+        
+    }
+    .left_links {
+        display: flex;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+    }
+    .right_links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+   
+}
+
