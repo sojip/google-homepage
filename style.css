@@ -1,0 +1,54 @@
+/* Navigation */
+nav {
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+}
+
+/* main */
+/* body {
+    position: relative;
+} */
+.container {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+form input {
+    margin: 25px;
+    width: 50%;
+    border-radius: 10px;
+    height: 25px;
+}
+
+/*footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+footer a {
+    text-decoration: none;
+    color: black;
+
+} 
+
+ul {
+    padding:0;
+}
+
+li {
+    display: inline;
+    
+}
+
+.right_links {
+    text-align: right;
+    color: red;
+}
