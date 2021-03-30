@@ -1,5 +1,6 @@
 html {
-    height: 100%;  
+    height: 100%;
+    width: 100%;  
 }
 body {
     margin: 0;
@@ -40,39 +41,57 @@ nav img {
 
 .container {
     text-align: center;
+    margin: auto;
     margin-top: 100px;
+    width: 80%;
+}
+
+#searchBar {
     position: relative;
+    width: 50%;
+    margin: auto; 
+    display: block;
 }
 
 form input {
-    margin: 25px;
-    width: 50%;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
     border-radius: 20px;
-    height: 30px;
+    height: 40px;
     padding-left: 50px;
     padding-right: 50px;
+    outline: none;
+    
 }
 
 form input:focus {
-    outline: none;
-    box-shadow:  0 0 10px 5px;
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #seach_icon {
     position: absolute;
-    top : 51%;
-    left: 21%;
+    top : 40%;
+    left: 5%;
     
 }
 
 #microphone_icon {
     position: absolute;
-    top : 51%;
-    right: 21%;
+    top : 40%;
+    right: 5%;
 }
 
 button {
     padding: 10px;
+    margin: 10px;
+}
+
+.container a {
+    text-decoration: none;
 }
 
 /*footer */
@@ -80,10 +99,17 @@ button {
 footer {
     flex-shrink: 0;
     width: 100%;
+    background-color: #F5F5F5;
   }
+
+.location {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
 
 .location p {
     margin-left: 15px;
+    
 }
 
 footer a {
@@ -104,26 +130,11 @@ li {
 .external_links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-@media (max-width : 992px) {
-    .external_links {
-        display: flex;
-        flex-direction: column;  
-        align-items: center;
-        
+@media (max-width: 600px) {
+    #searchBar {
+        width: 80%;
     }
-    .left_links {
-        display: flex;
-        justify-content: center;
-        
-        flex-wrap: wrap;
-    }
-    .right_links {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-   
 }
-

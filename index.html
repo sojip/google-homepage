@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <script src="https://kit.fontawesome.com/1755d5abdd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title> google-homepage</title>
+    <title>google-homepage</title>
 </head>
 <body>
     <div class="content">
@@ -24,10 +25,11 @@
                     alt="logo">
 
                 <form action="#">
-                    <i class="fas fa-search" id="seach_icon"></i>
-                    <input type="text">
-                    <i class="fas fa-microphone" id="microphone_icon"></i>
-                    <br>
+                    <div id="searchBar">
+                        <input type="text">
+                        <i class="fas fa-search" id="seach_icon"></i>
+                        <i class="fas fa-microphone" id="microphone_icon"></i>
+                    </div>
                     <button type="submit">Recherche Google</button>
                     <button type="submit">J'ai de la chance</button>
                 </form>
@@ -38,25 +40,19 @@
         </main>
     </div>
     <footer>
-        <hr>
+
         <div class="location">
             <p>Cameroun</p>
         </div>
-        <hr>
-        <div class="external_links">
-            <ul class="left_links">
 
+        <div class="external_links">
                 <li><a href="#">Publicité</a></li>
                 <li><a href="#">Entreprise</a></li>
                 <li><a href="#">A propos</a></li>
                 <li><a href="#">Comment fonctionne la recherche Google?</a></li>
-            </ul>
-
-            <ul class="right_links">
                 <li><a href="#">Confidentialité</a></li>
                 <li><a href="#">Conditions</a></li>
                 <li><a href="#">Paramètres</a></li>
-            </ul>
         </div>
     </footer>
 </body>
