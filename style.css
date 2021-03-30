@@ -49,8 +49,8 @@ form input {
     width: 50%;
     border-radius: 20px;
     height: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 form input:focus {
@@ -61,14 +61,14 @@ form input:focus {
 #seach_icon {
     position: absolute;
     top : 51%;
-    left: 26%;
+    left: 21%;
     
 }
 
 #microphone_icon {
     position: absolute;
     top : 51%;
-    right: 26%;
+    right: 21%;
 }
 
 button {
